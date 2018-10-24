@@ -1,5 +1,9 @@
-#! /bin/sh
-######
-# This script will be executed during startup. 
-###### 
+#!/bin/sh
+
+sh -c "echo 0000:01:00.0 > /sys/bus/pci/drivers/serial/unbind"
+sh -c "echo 0000:01:00.1 > /sys/bus/pci/drivers/serial/unbind"
+sh -c "echo 0000:01:00.2 > /sys/bus/pci/drivers/serial/unbind"
+sh -c "echo 0000:01:00.3 > /sys/bus/pci/drivers/serial/unbind"
 modprobe 99xx
+
+exit 0
