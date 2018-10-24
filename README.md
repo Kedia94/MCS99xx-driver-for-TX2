@@ -1,6 +1,10 @@
 # MCS99xx-driver-for-TX2
 
 It is specialized for 4 Ports Serial PCIe adapter (MCS9904)
+- /dev/ttyF0
+- /dev/ttyF1
+- /dev/ttyF2
+- /dev/ttyF3
 
 If you use different number of serial ports, you can apply to your device easily by modifying 'mcs99xx' file 
 

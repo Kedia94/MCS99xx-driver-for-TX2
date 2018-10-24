@@ -1,0 +1,13 @@
+*.mod.c
+*.o
+*.ko
+*.cmd
+*.symvers
+.tmp_version*
+*~
+Module.markers
+modules.*
+select_BR
+advanced_BR
+gpio_99xx
+*.swp

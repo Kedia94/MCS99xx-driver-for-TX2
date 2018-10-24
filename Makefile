@@ -36,6 +36,7 @@ default:
 	gcc -pthread gpio_99xx.c -o gpio_99xx
 
 install:
+	sudo mkdir -p /lib/modules/$(shell uname -r)/kernel/$(MDIR)
 	sudo cp 99xx.ko  /lib/modules/$(shell uname -r)/kernel/$(MDIR)
 	sudo depmod -A
 	chmod +x mcs99xx
